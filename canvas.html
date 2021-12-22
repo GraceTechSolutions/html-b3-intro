@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello HTML</title>
+    <script>
+        function display(){
+            var mycanvas = document.getElementById('myCanvas')
+            if (mycanvas.getContext){
+                var context = mycanvas.getContext('2d');
+                context.fillStyle = 'rgb(50, 0, 0)'
+                context.fillRect(5, 20, 200, 75)
+            }
+        }
+    </script>
+</head>
+<body onload="display()">
+    <canvas id="myCanvas" width="300" height="200" style="border: 2px solid #000;">
+        Canvas is not working
+    </canvas>    
+</body>
+</html>
